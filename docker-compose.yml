@@ -1,0 +1,17 @@
+services:
+  omniroute:
+    build: .
+    container_name: omniroute
+    restart: unless-stopped
+    ports:
+      - "20128:20128"
+    environment:
+      NODE_ENV: production
+      PORT: 20128
+      HOSTNAME: 0.0.0.0
+      DATA_DIR: /app/data
+    volumes:
+      - omniroute_data:/app/data
+
+volumes:
+  omniroute_data:
