@@ -1,4 +1,3 @@
-# -omniroute-server
 # OmniRoute Server
 
 Self-hosted OmniRoute gateway for a JARVIS/personal AI app.
